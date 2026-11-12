@@ -1,0 +1,33 @@
+name: Publish SEO marketing pages
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - name: Build crawlable localized pages
+        env:
+          SITE_URL: ${{ vars.SITE_URL }}
+          SEO_PUBLIC: ${{ vars.SEO_PUBLIC }}
+        run: |
+          test "$SEO_PUBLIC" = "1" || (echo 'Set repository variable SEO_PUBLIC=1' && exit 1)
+          test -n "$SITE_URL" || (echo 'Set repository variable SITE_URL with real HTTPS origin and optional prefix' && exit 1)
+          python scripts/build_site.py
+          python scripts/check_seo.py site/dist --public
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/dist
+      - id: deployment
+        uses: actions/deploy-pages@v4

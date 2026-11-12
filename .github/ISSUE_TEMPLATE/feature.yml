@@ -1,0 +1,11 @@
+name: Feature / Funcionalidade / Función
+description: Suggest a safe product improvement
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: User problem / Problema do usuário / Problema del usuario
+      description: Describe expected benefit without private data.
+    validations:
+      required: true

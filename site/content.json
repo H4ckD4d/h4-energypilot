@@ -1,0 +1,67 @@
+{
+  "title": "H4 EnergyPilot",
+  "tag": "Inteligência em eficiência energética",
+  "desc": "Análise de consumo elétrico e cenários de economia para negócios.",
+  "en_desc": "Electricity use analysis and savings scenarios for businesses.",
+  "es_desc": "Análisis del consumo eléctrico y escenarios de ahorro para empresas.",
+  "hero": {
+    "pt-BR": "Decisões melhores começam com dados de consumo transparentes.",
+    "en": "Better energy decisions start with transparent consumption data.",
+    "es": "Las mejores decisiones energéticas empiezan con datos transparentes."
+  },
+  "subtitle": {
+    "pt-BR": "Compare consumo, tarifa e cenários em relatórios reproduzíveis, sem prometer economias não verificadas.",
+    "en": "Compare consumption, rates and scenarios in reproducible reports, without making unverified savings promises.",
+    "es": "Compare consumo, tarifas y escenarios en informes reproducibles sin prometer ahorros no verificados."
+  },
+  "features": {
+    "pt-BR": [
+      [
+        "Indicadores simples",
+        "Consumo, gasto e variação em uma única visão."
+      ],
+      [
+        "Cenários auditáveis",
+        "Premissas explícitas e cálculo reproduzível."
+      ],
+      [
+        "Análise de dados",
+        "Relatórios para revisões técnicas e financeiras."
+      ]
+    ],
+    "en": [
+      [
+        "Clear indicators",
+        "Consumption, spending and variation in one view."
+      ],
+      [
+        "Auditable scenarios",
+        "Explicit assumptions and reproducible estimates."
+      ],
+      [
+        "Data analysis",
+        "Reports for technical and financial review."
+      ]
+    ],
+    "es": [
+      [
+        "Indicadores claros",
+        "Consumo, gasto y variación en una sola vista."
+      ],
+      [
+        "Escenarios auditables",
+        "Supuestos explícitos y estimaciones reproducibles."
+      ],
+      [
+        "Análisis de datos",
+        "Informes para revisión técnica y financiera."
+      ]
+    ]
+  },
+  "keywords": {
+    "pt-BR": "gestão de energia, análise de consumo, eficiência energética, custo de eletricidade, kWh",
+    "en": "energy efficiency software, electricity consumption analysis, energy cost planning",
+    "es": "eficiencia energética, análisis de consumo eléctrico, coste de energía"
+  },
+  "type": "energypilot"
+}
